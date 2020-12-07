@@ -1,0 +1,413 @@
+"05-12-2020 13:10:36.930 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarting - Starting SpringBootMongoDbApplication using Java 1.8.0_25 on lp28 with PID 7396 (F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB\target\classes started by anantharaju in F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB)
+""05-12-2020 13:10:36.963 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStartupProfileInfo - The following profiles are active: dev
+""05-12-2020 13:10:37.332 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""05-12-2020 13:10:37.333 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""05-12-2020 13:10:40.110 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""05-12-2020 13:10:40.273 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 144 ms. Found 1 MongoDB repository interfaces.
+""05-12-2020 13:10:42.090 [35m[restartedMain][0;39m [1;31mERROR[0;39m o.a.c.core.AprLifecycleListener.log - An incompatible version [1.1.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+""05-12-2020 13:10:43.385 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+""05-12-2020 13:10:43.395 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+""05-12-2020 13:10:43.396 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.39]
+""05-12-2020 13:10:43.547 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+""05-12-2020 13:10:43.548 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 6214 ms
+""05-12-2020 13:10:44.660 [35m[restartedMain][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+""05-12-2020 13:10:45.477 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+""05-12-2020 13:10:46.264 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""05-12-2020 13:10:46.947 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 14 endpoint(s) beneath base path '/actuator'
+""05-12-2020 13:10:47.259 [35m[cluster-ClusterId{value='5fcb397ceabef85dd9da3025', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Exception in monitor thread while connecting to server localhost:27017
+"com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:78)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+"05-12-2020 13:10:47.291 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+""05-12-2020 13:10:47.344 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarted - Started SpringBootMongoDbApplication in 13.332 seconds (JVM running for 33.065)
+""05-12-2020 13:11:45.555 [35m[cluster-ClusterId{value='5fcb397ceabef85dd9da3025', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:12, serverValue:2}] to localhost:27017
+""05-12-2020 13:11:45.555 [35m[cluster-rtt-ClusterId{value='5fcb397ceabef85dd9da3025', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:11, serverValue:1}] to localhost:27017
+""05-12-2020 13:11:45.557 [35m[cluster-ClusterId{value='5fcb397ceabef85dd9da3025', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=103175600}
+""05-12-2020 13:27:06.327 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+""05-12-2020 13:27:06.771 [35m[cluster-ClusterId{value='5fcb397ceabef85dd9da3025', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Exception in monitor thread while connecting to server localhost:27017
+"com.mongodb.MongoSocketReadException: Exception receiving message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateReadException(InternalStreamConnection.java:637)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:516)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveCommandMessageResponse(InternalStreamConnection.java:356)
+	at com.mongodb.internal.connection.InternalStreamConnection.receive(InternalStreamConnection.java:305)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:218)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketException: Connection reset
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:109)
+	at com.mongodb.internal.connection.SocketStream.read(SocketStream.java:131)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveResponseBuffers(InternalStreamConnection.java:648)
+	at com.mongodb.internal.connection.InternalStreamConnection.receiveMessageWithAdditionalTimeout(InternalStreamConnection.java:513)
+	... 5 common frames omitted
+"05-12-2020 13:27:07.250 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:10:45.494 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarting - Starting SpringBootMongoDbApplication using Java 1.8.0_25 on lp28 with PID 12928 (F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB\target\classes started by anantharaju in F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB)
+""05-12-2020 16:10:45.535 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStartupProfileInfo - The following profiles are active: dev
+""05-12-2020 16:10:46.203 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""05-12-2020 16:10:46.203 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""05-12-2020 16:10:48.715 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""05-12-2020 16:10:48.902 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 163 ms. Found 1 MongoDB repository interfaces.
+""05-12-2020 16:10:50.608 [35m[restartedMain][0;39m [1;31mERROR[0;39m o.a.c.core.AprLifecycleListener.log - An incompatible version [1.1.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+""05-12-2020 16:10:51.642 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+""05-12-2020 16:10:51.745 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+""05-12-2020 16:10:51.746 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.39]
+""05-12-2020 16:10:52.286 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+""05-12-2020 16:10:52.287 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 6082 ms
+""05-12-2020 16:10:53.939 [35m[restartedMain][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+""05-12-2020 16:10:54.968 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+""05-12-2020 16:10:56.208 [35m[cluster-ClusterId{value='5fcb63b5f500043e99fd9c35', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Exception in monitor thread while connecting to server localhost:27017
+"com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:78)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+"05-12-2020 16:10:56.726 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:11:00.028 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 14 endpoint(s) beneath base path '/actuator'
+""05-12-2020 16:11:03.542 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+""05-12-2020 16:11:03.562 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarted - Started SpringBootMongoDbApplication in 23.374 seconds (JVM running for 27.245)
+""05-12-2020 16:11:59.769 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+""05-12-2020 16:12:00.476 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:13:22.755 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarting - Starting SpringBootMongoDbApplication using Java 1.8.0_25 on lp28 with PID 9644 (F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB\target\classes started by anantharaju in F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB)
+""05-12-2020 16:13:22.824 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStartupProfileInfo - The following profiles are active: dev
+""05-12-2020 16:13:22.966 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""05-12-2020 16:13:22.967 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""05-12-2020 16:13:24.447 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""05-12-2020 16:13:24.661 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 202 ms. Found 1 MongoDB repository interfaces.
+""05-12-2020 16:13:25.867 [35m[restartedMain][0;39m [1;31mERROR[0;39m o.a.c.core.AprLifecycleListener.log - An incompatible version [1.1.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+""05-12-2020 16:13:26.364 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+""05-12-2020 16:13:26.379 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+""05-12-2020 16:13:26.380 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.39]
+""05-12-2020 16:13:26.583 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+""05-12-2020 16:13:26.585 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 3604 ms
+""05-12-2020 16:13:27.026 [35m[restartedMain][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+""05-12-2020 16:13:27.459 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+""05-12-2020 16:13:27.590 [35m[cluster-ClusterId{value='5fcb644f8e90b75a81165757', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:2}] to localhost:27017
+""05-12-2020 16:13:27.590 [35m[cluster-rtt-ClusterId{value='5fcb644f8e90b75a81165757', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:1}] to localhost:27017
+""05-12-2020 16:13:27.590 [35m[cluster-ClusterId{value='5fcb644f8e90b75a81165757', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=426775000}
+""05-12-2020 16:13:28.005 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:13:28.655 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 14 endpoint(s) beneath base path '/actuator'
+""05-12-2020 16:13:28.874 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+""05-12-2020 16:13:28.942 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarted - Started SpringBootMongoDbApplication in 7.382 seconds (JVM running for 9.27)
+""05-12-2020 16:13:54.377 [35m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""05-12-2020 16:14:22.132 [35m[http-nio-8080-exec-3][0;39m [1;31mERROR[0;39m o.a.c.c.C.[.[.[.[dispatcherServlet].log - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/student/5fc8fc49dd1d0c71f100294f': {public java.util.List io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentByName(java.lang.String), public io.github.anantharajuc.sbmdb.model.Student io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentById(java.lang.String)}] with root cause
+"java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/student/5fc8fc49dd1d0c71f100294f': {public java.util.List io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentByName(java.lang.String), public io.github.anantharajuc.sbmdb.model.Student io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentById(java.lang.String)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:408)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:364)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:123)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:66)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:491)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1255)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+"05-12-2020 16:14:29.302 [35m[http-nio-8080-exec-5][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:3, serverValue:3}] to localhost:27017
+""05-12-2020 16:17:30.598 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+""05-12-2020 16:17:31.098 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:17:31.155 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Closed connection [connectionId{localValue:3, serverValue:3}] to localhost:27017 because the pool has been closed.
+""05-12-2020 16:19:52.910 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarting - Starting SpringBootMongoDbApplication using Java 1.8.0_25 on lp28 with PID 2332 (F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB\target\classes started by anantharaju in F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB)
+""05-12-2020 16:19:52.915 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStartupProfileInfo - The following profiles are active: dev
+""05-12-2020 16:19:52.996 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""05-12-2020 16:19:52.997 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""05-12-2020 16:19:53.726 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""05-12-2020 16:19:53.856 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 125 ms. Found 1 MongoDB repository interfaces.
+""05-12-2020 16:19:54.518 [35m[restartedMain][0;39m [1;31mERROR[0;39m o.a.c.core.AprLifecycleListener.log - An incompatible version [1.1.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+""05-12-2020 16:19:54.787 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+""05-12-2020 16:19:54.795 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+""05-12-2020 16:19:54.796 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.39]
+""05-12-2020 16:19:54.899 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+""05-12-2020 16:19:54.900 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1900 ms
+""05-12-2020 16:19:55.274 [35m[restartedMain][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+""05-12-2020 16:19:55.373 [35m[cluster-ClusterId{value='5fcb65d320a9015afa868c90', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:5}] to localhost:27017
+""05-12-2020 16:19:55.373 [35m[cluster-rtt-ClusterId{value='5fcb65d320a9015afa868c90', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:4}] to localhost:27017
+""05-12-2020 16:19:55.374 [35m[cluster-ClusterId{value='5fcb65d320a9015afa868c90', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=31567200}
+""05-12-2020 16:19:55.829 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+""05-12-2020 16:19:56.177 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:19:56.948 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 14 endpoint(s) beneath base path '/actuator'
+""05-12-2020 16:19:57.000 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+""05-12-2020 16:19:57.025 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarted - Started SpringBootMongoDbApplication in 4.8 seconds (JVM running for 6.965)
+""05-12-2020 16:26:40.795 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""05-12-2020 16:26:41.328 [35m[http-nio-8080-exec-1][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:3, serverValue:9}] to localhost:27017
+""05-12-2020 16:27:49.458 [35m[Thread-5][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:27:49.491 [35m[Thread-5][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Closed connection [connectionId{localValue:3, serverValue:9}] to localhost:27017 because the pool has been closed.
+""05-12-2020 16:27:50.011 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarting - Starting SpringBootMongoDbApplication using Java 1.8.0_25 on lp28 with PID 2332 (F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB\target\classes started by anantharaju in F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB)
+""05-12-2020 16:27:50.012 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStartupProfileInfo - The following profiles are active: dev
+""05-12-2020 16:27:50.530 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""05-12-2020 16:27:50.535 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 5 ms. Found 1 MongoDB repository interfaces.
+""05-12-2020 16:27:50.681 [35m[restartedMain][0;39m [1;31mERROR[0;39m o.a.c.core.AprLifecycleListener.log - An incompatible version [1.1.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+""05-12-2020 16:27:50.900 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+""05-12-2020 16:27:50.904 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+""05-12-2020 16:27:50.907 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.39]
+""05-12-2020 16:27:50.944 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+""05-12-2020 16:27:50.945 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 928 ms
+""05-12-2020 16:27:51.046 [35m[restartedMain][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+""05-12-2020 16:27:51.063 [35m[cluster-rtt-ClusterId{value='5fcb67af20a9015afa868c91', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:4, serverValue:10}] to localhost:27017
+""05-12-2020 16:27:51.067 [35m[cluster-ClusterId{value='5fcb67af20a9015afa868c91', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:5, serverValue:11}] to localhost:27017
+""05-12-2020 16:27:51.067 [35m[cluster-ClusterId{value='5fcb67af20a9015afa868c91', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=12343900}
+""05-12-2020 16:27:51.083 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+""05-12-2020 16:27:51.178 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:27:51.288 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 14 endpoint(s) beneath base path '/actuator'
+""05-12-2020 16:27:51.307 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+""05-12-2020 16:27:51.320 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarted - Started SpringBootMongoDbApplication in 1.469 seconds (JVM running for 481.259)
+""05-12-2020 16:27:51.323 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent - Condition evaluation unchanged
+""05-12-2020 16:29:09.160 [35m[Thread-9][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:29:09.497 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarting - Starting SpringBootMongoDbApplication using Java 1.8.0_25 on lp28 with PID 2332 (F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB\target\classes started by anantharaju in F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB)
+""05-12-2020 16:29:09.497 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStartupProfileInfo - The following profiles are active: dev
+""05-12-2020 16:29:09.711 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""05-12-2020 16:29:09.716 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 4 ms. Found 1 MongoDB repository interfaces.
+""05-12-2020 16:29:09.849 [35m[restartedMain][0;39m [1;31mERROR[0;39m o.a.c.core.AprLifecycleListener.log - An incompatible version [1.1.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+""05-12-2020 16:29:09.926 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+""05-12-2020 16:29:09.927 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+""05-12-2020 16:29:09.928 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.39]
+""05-12-2020 16:29:10.006 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+""05-12-2020 16:29:10.007 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 507 ms
+""05-12-2020 16:29:10.066 [35m[restartedMain][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+""05-12-2020 16:29:10.078 [35m[cluster-ClusterId{value='5fcb67fe20a9015afa868c92', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:6, serverValue:12}] to localhost:27017
+""05-12-2020 16:29:10.080 [35m[cluster-ClusterId{value='5fcb67fe20a9015afa868c92', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=8291000}
+""05-12-2020 16:29:10.080 [35m[cluster-rtt-ClusterId{value='5fcb67fe20a9015afa868c92', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:7, serverValue:13}] to localhost:27017
+""05-12-2020 16:29:10.110 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+""05-12-2020 16:29:10.426 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:29:10.598 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 14 endpoint(s) beneath base path '/actuator'
+""05-12-2020 16:29:10.647 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+""05-12-2020 16:29:10.680 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarted - Started SpringBootMongoDbApplication in 1.236 seconds (JVM running for 560.618)
+""05-12-2020 16:29:10.687 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent - Condition evaluation unchanged
+""05-12-2020 16:29:58.765 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+""05-12-2020 16:29:59.370 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:34:45.264 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarting - Starting SpringBootMongoDbApplication using Java 1.8.0_25 on lp28 with PID 14452 (F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB\target\classes started by anantharaju in F:\Anantha Raju C\eclipse-workspace\WS_E_2020_SBAT\Spring-Boot-MongoDB)
+""05-12-2020 16:34:45.268 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStartupProfileInfo - The following profiles are active: dev
+""05-12-2020 16:34:45.319 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+""05-12-2020 16:34:45.319 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor.logTo - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+""05-12-2020 16:34:46.076 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Bootstrapping Spring Data MongoDB repositories in DEFAULT mode.
+""05-12-2020 16:34:46.172 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.d.r.c.RepositoryConfigurationDelegate.registerRepositoriesIn - Finished Spring Data repository scanning in 91 ms. Found 1 MongoDB repository interfaces.
+""05-12-2020 16:34:46.608 [35m[restartedMain][0;39m [1;31mERROR[0;39m o.a.c.core.AprLifecycleListener.log - An incompatible version [1.1.30] of the Apache Tomcat Native library is installed, while Tomcat requires version [1.2.14]
+""05-12-2020 16:34:46.809 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.initialize - Tomcat initialized with port(s): 8080 (http)
+""05-12-2020 16:34:46.816 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardService.log - Starting service [Tomcat]
+""05-12-2020 16:34:46.817 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.catalina.core.StandardEngine.log - Starting Servlet engine: [Apache Tomcat/9.0.39]
+""05-12-2020 16:34:46.895 [35m[restartedMain][0;39m [34mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring embedded WebApplicationContext
+""05-12-2020 16:34:46.896 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.s.c.ServletWebServerApplicationContext.prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1575 ms
+""05-12-2020 16:34:47.180 [35m[restartedMain][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms'}
+""05-12-2020 16:34:47.233 [35m[cluster-ClusterId{value='5fcb694f1dfaae3db2a77fbf', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:1, serverValue:14}] to localhost:27017
+""05-12-2020 16:34:47.234 [35m[cluster-rtt-ClusterId{value='5fcb694f1dfaae3db2a77fbf', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:2, serverValue:15}] to localhost:27017
+""05-12-2020 16:34:47.234 [35m[cluster-ClusterId{value='5fcb694f1dfaae3db2a77fbf', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Monitor thread successfully connected to server with description ServerDescription{address=localhost:27017, type=STANDALONE, state=CONNECTED, ok=true, minWireVersion=0, maxWireVersion=7, maxDocumentSize=16777216, logicalSessionTimeoutMinutes=30, roundTripTimeNanos=19919100}
+""05-12-2020 16:34:47.400 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.d.a.OptionalLiveReloadServer.startServer - LiveReload server is running on port 35729
+""05-12-2020 16:34:47.701 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.initialize - Initializing ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:34:48.065 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.a.e.web.EndpointLinksResolver.<init> - Exposing 14 endpoint(s) beneath base path '/actuator'
+""05-12-2020 16:34:48.105 [35m[restartedMain][0;39m [34mINFO [0;39m o.s.b.w.e.tomcat.TomcatWebServer.start - Tomcat started on port(s): 8080 (http) with context path ''
+""05-12-2020 16:34:48.118 [35m[restartedMain][0;39m [34mINFO [0;39m i.g.a.s.SpringBootMongoDbApplication.logStarted - Started SpringBootMongoDbApplication in 3.889 seconds (JVM running for 4.99)
+""05-12-2020 16:35:06.470 [35m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m o.a.c.c.C.[Tomcat].[localhost].[/].log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""05-12-2020 16:35:06.982 [35m[http-nio-8080-exec-2][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Opened connection [connectionId{localValue:3, serverValue:16}] to localhost:27017
+""05-12-2020 16:35:27.035 [35m[http-nio-8080-exec-3][0;39m [1;31mERROR[0;39m o.a.c.c.C.[.[.[.[dispatcherServlet].log - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/student/5fcb69621dfaae3db2a77fc0': {public java.util.List io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentByName(java.lang.String), public io.github.anantharajuc.sbmdb.model.Student io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentById(java.lang.String)}] with root cause
+"java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/student/5fcb69621dfaae3db2a77fc0': {public java.util.List io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentByName(java.lang.String), public io.github.anantharajuc.sbmdb.model.Student io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentById(java.lang.String)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:408)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:364)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:123)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:66)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:491)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1255)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+"05-12-2020 16:37:58.632 [35m[http-nio-8080-exec-9][0;39m [1;31mERROR[0;39m o.a.c.c.C.[.[.[.[dispatcherServlet].log - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/student/5fcb69621dfaae3db2a77fc0': {public java.util.List io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentByName(java.lang.String), public io.github.anantharajuc.sbmdb.model.Student io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentById(java.lang.String)}] with root cause
+"java.lang.IllegalStateException: Ambiguous handler methods mapped for '/api/v1/student/5fcb69621dfaae3db2a77fc0': {public java.util.List io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentByName(java.lang.String), public io.github.anantharajuc.sbmdb.model.Student io.github.anantharajuc.sbmdb.controller.StudentQueryController.findStudentById(java.lang.String)}
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lookupHandlerMethod(AbstractHandlerMethodMapping.java:408)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.getHandlerInternal(AbstractHandlerMethodMapping.java:364)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:123)
+	at org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping.getHandlerInternal(RequestMappingInfoHandlerMapping.java:66)
+	at org.springframework.web.servlet.handler.AbstractHandlerMapping.getHandler(AbstractHandlerMapping.java:491)
+	at org.springframework.web.servlet.DispatcherServlet.getHandler(DispatcherServlet.java:1255)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1037)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:961)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Unknown Source)
+"05-12-2020 16:38:57.499 [35m[cluster-ClusterId{value='5fcb694f1dfaae3db2a77fbf', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Exception in monitor thread while connecting to server localhost:27017
+"com.mongodb.MongoSocketWriteException: Exception sending message
+	at com.mongodb.internal.connection.InternalStreamConnection.translateWriteException(InternalStreamConnection.java:619)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:497)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendCommandMessage(InternalStreamConnection.java:328)
+	at com.mongodb.internal.connection.InternalStreamConnection.send(InternalStreamConnection.java:295)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:209)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.SocketException: Connection reset by peer: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(Unknown Source)
+	at java.net.SocketOutputStream.write(Unknown Source)
+	at com.mongodb.internal.connection.SocketStream.write(SocketStream.java:99)
+	at com.mongodb.internal.connection.InternalStreamConnection.sendMessage(InternalStreamConnection.java:494)
+	... 5 common frames omitted
+"05-12-2020 16:38:59.579 [35m[cluster-ClusterId{value='5fcb694f1dfaae3db2a77fbf', description='null'}-localhost:27017][0;39m [34mINFO [0;39m org.mongodb.driver.cluster.info - Exception in monitor thread while connecting to server localhost:27017
+"com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:70)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:143)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.lookupServerDescription(DefaultServerMonitor.java:188)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:144)
+	at java.lang.Thread.run(Unknown Source)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:78)
+	at com.mongodb.internal.connection.SocketStream.initializeSocket(SocketStream.java:79)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:65)
+	... 4 common frames omitted
+"05-12-2020 16:39:13.019 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin.shutdown - Application shutdown requested.
+""05-12-2020 16:39:14.242 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m o.s.s.c.ThreadPoolTaskExecutor.shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+""05-12-2020 16:39:14.255 [35m[RMI TCP Connection(2)-127.0.0.1][0;39m [34mINFO [0;39m org.mongodb.driver.connection.info - Closed connection [connectionId{localValue:3, serverValue:16}] to localhost:27017 because there was a socket exception raised on another connection from this pool.
+"

@@ -1,0 +1,12 @@
+${Ansi.GREEN}   _____            _               ____              _     __  __                         _____  ____  
+${Ansi.GREEN}  / ____|          (_)             |  _ \            | |   |  \/  |                       |  __ \|  _ \ 
+${Ansi.GREEN} | (___  _ __  _ __ _ _ __   __ _  | |_) | ___   ___ | |_  | \  / | ___  _ __   __ _  ___ | |  | | |_) |
+${Ansi.GREEN}  \___ \| '_ \| '__| | '_ \ / _` | |  _ < / _ \ / _ \| __| | |\/| |/ _ \| '_ \ / _` |/ _ \| |  | |  _ < 
+${Ansi.GREEN}  ____) | |_) | |  | | | | | (_| | | |_) | (_) | (_) | |_  | |  | | (_) | | | | (_| | (_) | |__| | |_) |
+${Ansi.GREEN} |_____/| .__/|_|  |_|_| |_|\__, | |____/ \___/ \___/ \__| |_|  |_|\___/|_| |_|\__, |\___/|_____/|____/ 
+${Ansi.GREEN}        | |                  __/ |                                              __/ |                   
+${Ansi.GREEN}        |_|                 |___/                                              |___/                    
+
+${Ansi.RED} :: Spring Boot ${spring.application.name} ${Ansi.DEFAULT}      
+${Ansi.RED} :: Spring Boot ${spring-boot.version} ${Ansi.DEFAULT}   
+${Ansi.RED} :: Spring Boot ${spring-boot.formatted-version} ${Ansi.DEFAULT}
