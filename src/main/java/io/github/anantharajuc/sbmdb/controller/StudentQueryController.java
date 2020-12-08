@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.github.anantharajuc.sbmdb.api.ResourcePaths;
@@ -42,6 +43,18 @@ public class StudentQueryController
 		return studentServiceImpl.findAllStudents();
 	}
 	
+	@GetMapping(value=ResourcePaths.SORTING)
+	public List<Student> findAllStudentsSorting(@RequestParam String direction, @RequestParam String properties)
+	{
+		return studentServiceImpl.findAllStudentsSorting(direction, properties);
+	}
+	
+	@GetMapping(value=ResourcePaths.PAGINATION)
+	public List<Student> findAllStudentsPagination(@RequestParam int pageNo, @RequestParam int pageSize)
+	{
+		return studentServiceImpl.findAllStudentsPagination(pageNo, pageSize);
+	}
+	
 	/*
 	 * Method to search a student by id.
 	 * 
@@ -58,8 +71,16 @@ public class StudentQueryController
 	}
 	
 	@GetMapping(value=ResourcePaths.NAME)
-	public List<Student> findStudentByName(@PathVariable String name)
+	public List<Student> findStudentByName(@RequestParam String name)
 	{
-		return studentServiceImpl.findStudentByName(name);
+		//return studentServiceImpl.findStudentByName(name);
+		
+		return studentServiceImpl.nativeQueryFindByName(name);
+	}
+	
+	@GetMapping(value=ResourcePaths.DEPARTMENT)
+	public List<Student> findStudentByDepartmentName(@RequestParam String departmentName)
+	{
+		return studentServiceImpl.findStudentByDepartmentName(departmentName);
 	}
 }

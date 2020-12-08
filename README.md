@@ -71,7 +71,7 @@ These instructions will get you a copy of the project up and running on your loc
 }
 ```
 
-##### <a id="update">Update -> /api/v1/student</a>
+##### <a id="update">Update -> /api/v1/student/{id}</a>
 ```json
 {
     "name" : "john",
