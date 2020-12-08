@@ -36,3 +36,57 @@ These instructions will get you a copy of the project up and running on your loc
 ### Prerequisites
 
 *	You need to have **MongoDB** installed on your machine to run the application.
+
+## URL's
+
+|                          URL                        | Method |    Remarks             | Sample Valid Request Body |
+|-----------------------------------------------------|--------|------------------------|---------------------------|
+|`http://localhost:8080/api/v1/student`               | POST   | Create student         | [JSON](#create)           |
+|`http://localhost:8080/api/v1/student`               | GET    | Get all students       |                           |
+|`http://localhost:8080/api/v1/student/{id}`          | GET    | Get student by id      |                           |
+|`http://localhost:8080/api/v1/student/{id}`          | DELETE | Delete student by name |                           |
+|`http://localhost:8080/api/v1/student/{id}`          | PUT    | Update student by id   | [JSON](#update)           |
+|`http://localhost:8080/api/v1/student/name/{name}`   | POST   | Get student by name    |                           |
+
+
+#### Sample Valid JSON Request Bodys
+
+##### <a id="create">Create -> /api/v1/student</a>
+```json
+{
+    "name" : "jane",
+    "email" : "example@domain.com",
+    "department" : {
+        "departmentName" : "computer science",
+        "location" : "Dystopia"
+    },
+    "subjects" : [{
+        "subjectName" : "Java",
+        "marksObtained" : 80
+    },
+    {
+        "subjectName" : "Chemistry",
+        "marksObtained" : 90
+    }]
+}
+```
+
+##### <a id="update">Update -> /api/v1/student</a>
+```json
+{
+    "name" : "john",
+    "email" : "example@domain.com",
+    "department" : {
+        "departmentName" : "computer science",
+        "location" : "Dystopia"
+    },
+    "subjects" : [{
+        "subjectName" : "Java",
+        "marksObtained" : 80
+    },
+    {
+        "subjectName" : "Chemistry",
+        "marksObtained" : 90
+    }]
+}
+```

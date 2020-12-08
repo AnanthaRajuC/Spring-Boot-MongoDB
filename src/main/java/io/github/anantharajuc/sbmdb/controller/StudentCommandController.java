@@ -39,12 +39,12 @@ public class StudentCommandController
 		return studentServiceImpl.createStudent(student); 
 	}
 
-	@PutMapping()
-	public Student updateStudent(@RequestBody StudentDTO studentDTO)
+	@PutMapping(value=ResourcePaths.ID)
+	public Student updateStudent(@PathVariable String id, @RequestBody StudentDTO studentDTO)
 	{
 		Student student = modelMapper.map(studentDTO, Student.class);
 		
-		return studentServiceImpl.updateStudent(student);
+		return studentServiceImpl.updateStudent(id, student);
 	}
 
 	@DeleteMapping(value=ResourcePaths.ID)
