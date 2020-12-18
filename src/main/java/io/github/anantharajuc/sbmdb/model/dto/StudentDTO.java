@@ -2,7 +2,9 @@ package io.github.anantharajuc.sbmdb.model.dto;
 
 import java.util.List;
 
+import io.github.anantharajuc.sbmdb.model.Demographics;
 import io.github.anantharajuc.sbmdb.model.Department;
+import io.github.anantharajuc.sbmdb.model.Hobbies;
 import io.github.anantharajuc.sbmdb.model.Subject;
 import lombok.AccessLevel;
 import lombok.Getter;
@@ -19,4 +21,6 @@ public class StudentDTO
 	String email;
 	Department department;
 	List<Subject> subjects;
+	Demographics demographics;
+	List<Hobbies> hobbies;
 }

@@ -9,6 +9,8 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 import io.github.anantharajuc.sbmdb.exception.ResourceNotFoundException;
 import io.github.anantharajuc.sbmdb.model.Student;
+import io.github.anantharajuc.sbmdb.repository.DemographicsRepository;
+import io.github.anantharajuc.sbmdb.repository.HobbiesRepository;
 import io.github.anantharajuc.sbmdb.repository.StudentRepository;
 import lombok.extern.log4j.Log4j2;
 
@@ -26,9 +28,27 @@ public class StudentServiceImpl implements StudentService
 	@Autowired
 	StudentRepository studentRepository;
 	
+	@Autowired
+	DemographicsRepository demographicsRepository;
+	
+	@Autowired
+	HobbiesRepository hobbiesRepository;
+	
 	@Override
 	public Student createStudent(Student student) 
-	{
+	{	
+		if(student.getDemographics() != null)
+		{
+			log.info("demographicsRepository is-not-null check");	
+
+			demographicsRepository.save(student.getDemographics());
+		}
+		
+		if(student.getHobbies()!= null && !student.getHobbies().isEmpty())
+		{
+			hobbiesRepository.saveAll(student.getHobbies());
+		}
+		
 		return studentRepository.save(student); 
 	}
 

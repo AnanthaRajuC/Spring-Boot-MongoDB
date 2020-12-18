@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Learning MongoDB with Spring Boot.
+Learning the cross-platform document-oriented database program MongoDB with the Java-based framework Spring Boot.
 
 ## Technology stack & other Open-source libraries
 
@@ -54,39 +54,75 @@ These instructions will get you a copy of the project up and running on your loc
 ##### <a id="create">Create -> /api/v1/student</a>
 ```json
 {
-    "name" : "jane",
-    "email" : "example@domain.com",
-    "department" : {
-        "departmentName" : "computer science",
-        "location" : "Dystopia"
+    "name": "John Doe",
+    "email": "example@domain.com",
+    "department": {
+        "departmentName": "computer science",
+        "location": "Dystopia"
     },
-    "subjects" : [{
-        "subjectName" : "Java",
-        "marksObtained" : 80
+    "subjects": [
+        {
+            "subjectName": "Java",
+            "marksObtained": 80
+        },
+        {
+            "subjectName": "Chemistry",
+            "marksObtained": 90
+        }
+    ],
+    "demographics": {
+        "country": "usa",
+        "age": 50
     },
-    {
-        "subjectName" : "Chemistry",
-        "marksObtained" : 90
-    }]
+    "hobbies": [
+        {
+            "hobbyName": "music",
+            "interestLevel": 4
+        },
+        {
+            "hobbyName": "sports",
+            "interestLevel": 3
+        }
+    ]
 }
 ```
 
 ##### <a id="update">Update -> /api/v1/student/{id}</a>
 ```json
 {
-    "name" : "john",
-    "email" : "example@domain.com",
-    "department" : {
-        "departmentName" : "computer science",
-        "location" : "Dystopia"
+    "name": "John Doe",
+    "email": "example@domain.com",
+    "department": {
+        "departmentName": "computer science",
+        "location": "Dystopia"
     },
-    "subjects" : [{
-        "subjectName" : "Java",
-        "marksObtained" : 80
+    "subjects": [
+        {
+            "subjectName": "Java",
+            "marksObtained": 80
+        },
+        {
+            "subjectName": "Chemistry",
+            "marksObtained": 90
+        }
+    ],
+    "demographics": {
+        "country": "usa",
+        "age": 50
     },
-    {
-        "subjectName" : "Chemistry",
-        "marksObtained" : 90
-    }]
+    "hobbies": [
+        {
+            "hobbyName": "music",
+            "interestLevel": 4
+        },
+        {
+            "hobbyName": "sports",
+            "interestLevel": 3
+        }
+    ]
 }
 ```
+
+## Documentation
+
+* 	Postman Collection - with code auto-generated snippets in cURL, jQuery, Ruby,Python Requests, Node, PHP and Go programming languages

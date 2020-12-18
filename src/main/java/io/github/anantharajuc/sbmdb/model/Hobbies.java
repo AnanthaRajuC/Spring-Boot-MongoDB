@@ -1,9 +1,6 @@
 package io.github.anantharajuc.sbmdb.model;
 
-import java.util.List;
-
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.DBRef;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -14,27 +11,16 @@ import lombok.experimental.FieldDefaults;
 
 @Getter
 @Setter
+@Document(collection="hobbies")
 @FieldDefaults(level=AccessLevel.PRIVATE)
-@Document(collection="student")
-public class Student 
+public class Hobbies 
 {
 	@Id
 	String id;
 	
-	@Field(name="name")
-	String name;
+	@Field(name="hobby_name")
+	String hobbyName;
 	
-	@Field(name="mail")
-	String email;
-	
-	@Field(name="department")
-	Department department;
-	
-	List<Subject> subjects;
-	
-	@DBRef
-	Demographics demographics;
-	
-	@DBRef
-	List<Hobbies> hobbies;
+	@Field(name="interest_level")
+	int interestLevel;
 }
