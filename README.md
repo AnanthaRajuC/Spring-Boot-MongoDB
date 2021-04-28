@@ -1,4 +1,6 @@
 # Spring Boot - MongoDB
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAnanthaRajuC%2FSpring-Boot-MongoDB.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FAnanthaRajuC%2FSpring-Boot-MongoDB?ref=badge_shield)
+
 
 ## Purpose
 
@@ -126,3 +128,6 @@ These instructions will get you a copy of the project up and running on your loc
 ## Documentation
 
 * 	Postman Collection - with code auto-generated snippets in cURL, jQuery, Ruby,Python Requests, Node, PHP and Go programming languages
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAnanthaRajuC%2FSpring-Boot-MongoDB.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FAnanthaRajuC%2FSpring-Boot-MongoDB?ref=badge_large)
