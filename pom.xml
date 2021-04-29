@@ -16,6 +16,11 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<properties>
+		<sonar.projectKey>AnanthaRajuC_Spring-Boot-MongoDB</sonar.projectKey>
+		<sonar.organization>anantharajuc</sonar.organization>
+		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
+	</properties>
 	</properties>
 
 	<dependencies>
