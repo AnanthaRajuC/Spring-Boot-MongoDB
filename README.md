@@ -1,10 +1,11 @@
 # Spring Boot - MongoDB
-[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FAnanthaRajuC%2FSpring-Boot-MongoDB.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FAnanthaRajuC%2FSpring-Boot-MongoDB?ref=badge_shield)
-
-
-## Purpose
 
 Learning the cross-platform document-oriented database program MongoDB with the Java-based framework Spring Boot.
+
+|     Service     | Badge | Badge | Badge | Badge | Badge |
+|-----------------|-------|-------|-------|-------|-------|
+|  **GitHub**     |[![GitHub last commit](https://img.shields.io/github/last-commit/AnanthaRajuC/Spring-Boot-MongoDB)](https://github.com/AnanthaRajuC/Spring-Boot-MongoDB/commits/master)|[![GitHub pull requests](https://img.shields.io/github/issues-pr-raw/AnanthaRajuC/Spring-Boot-MongoDB)](https://github.com/AnanthaRajuC/Spring-Boot-MongoDB/pulls)|[![GitHub issues](https://img.shields.io/github/issues/AnanthaRajuC/Spring-Boot-MongoDB)](https://github.com/AnanthaRajuC/Spring-Boot-MongoDB/issues)|[![GitHub forks](https://img.shields.io/github/forks/AnanthaRajuC/Spring-Boot-MongoDB)](https://github.com/AnanthaRajuC/Spring-Boot-MongoDB/network)|[![GitHub stars](https://img.shields.io/github/stars/AnanthaRajuC/Spring-Boot-MongoDB)](https://github.com/AnanthaRajuC/Spring-Boot-MongoDB/stargazers)|
+|  **GitHub**     |![GitHub repo size](https://img.shields.io/github/repo-size/AnanthaRajuC/Spring-Boot-MongoDB)|![GitHub top language](https://img.shields.io/github/languages/top/AnanthaRajuC/Spring-Boot-MongoDB.svg)|![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/AnanthaRajuC/Spring-Boot-MongoDB)|![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/AnanthaRajuC/Spring-Boot-MongoDB.svg)|![GitHub language count](https://img.shields.io/github/languages/count/AnanthaRajuC/Spring-Boot-MongoDB)|
 
 ## Technology stack & other Open-source libraries
 
