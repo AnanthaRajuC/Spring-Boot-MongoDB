@@ -13,7 +13,7 @@
 
 *	You need to have **MongoDB** installed on your machine to run the application. To start the MongoDB server, on your windows machine navigate to **`C:\Program Files\MongoDB\Server\4.0\bin\`** folder and double-click on **`mongod.exe`** file
 
-[![MongoDB Server Start](documents/images/mongod-server-start.PNG)](documents/images/mongod-server-start.PNG)
+[![MongoDB Server Start](/images/mongod-server-start.PNG)](/images/mongod-server-start.PNG)
 
 #### Running the application with IDE
 
