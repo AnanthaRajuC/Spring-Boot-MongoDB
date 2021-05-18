@@ -4,6 +4,7 @@ import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -17,6 +18,7 @@ import io.github.anantharajuc.sbmdb.api.ResourcePaths;
 import io.github.anantharajuc.sbmdb.model.Student;
 import io.github.anantharajuc.sbmdb.model.dto.StudentDTO;
 import io.github.anantharajuc.sbmdb.service.StudentServiceImpl;
+import io.swagger.v3.oas.annotations.Operation;
 
 /*
  * Student Command Controller
@@ -47,13 +49,14 @@ public class StudentCommandController
 	 * 
 	 * 201 - Created: Everything worked as expected.
 	 */
+	@Operation(summary="Add a new student to the datastore")
 	@PostMapping(produces=MediaType.APPLICATION_JSON_VALUE)
 	@ResponseStatus(HttpStatus.CREATED)
-	public Student createStudent(@RequestBody StudentDTO studentDTO)
+	public ResponseEntity<Student> createStudent(@RequestBody StudentDTO studentDTO)
 	{
 		Student student = modelMapper.map(studentDTO, Student.class);
 		
-		return studentServiceImpl.createStudent(student); 
+		return ResponseEntity.ok(studentServiceImpl.createStudent(student)); 
 	}
 
 	/*
@@ -71,11 +74,11 @@ public class StudentCommandController
 	 * 200 - OK: Everything worked as expected.
 	 */
 	@PutMapping(value=ResourcePaths.ID)
-	public Student updateStudent(@PathVariable String id, @RequestBody StudentDTO studentDTO)
+	public ResponseEntity<Student> updateStudent(@PathVariable String id, @RequestBody StudentDTO studentDTO)
 	{
 		Student student = modelMapper.map(studentDTO, Student.class);
 		
-		return studentServiceImpl.updateStudent(id, student);
+		return ResponseEntity.ok(studentServiceImpl.updateStudent(id, student));
 	}
 
 	/*
