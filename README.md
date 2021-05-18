@@ -44,6 +44,7 @@ Learning the cross-platform document-oriented database program MongoDB with the 
 
 - [Technology stack & other Open-source libraries](documents/TECHNOLOGY_STACK.MD)  
 - [Getting Started](documents/GETTING_STARTED.MD)  
+- [Installation](documents/Installation.MD)  
 - [Documentation](documents/DOCUMENTATION.MD) 
 - [API](documents/API.md)  
 

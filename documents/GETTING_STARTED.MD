@@ -10,6 +10,8 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-*	You need to have **MongoDB** installed on your machine to run the application.
+*	You need to have **MongoDB** installed on your machine to run the application. To start the MongoDB server, on your windows machine navigate to **`C:\Program Files\MongoDB\Server\4.0\bin\`** folder and double-click on **`mongod.exe`** file
+
+[![MongoDB Server Start](documents/images/mongod-server-start.PNG)](documents/images/mongod-server-start.PNG)
 	
 *	[dotenv-java](https://github.com/cdimascio/dotenv-java) is used to Load environment variables from the **.env** file.
