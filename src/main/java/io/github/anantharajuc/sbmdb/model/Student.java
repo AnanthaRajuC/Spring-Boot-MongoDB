@@ -16,7 +16,7 @@ import lombok.experimental.FieldDefaults;
 @Setter
 @FieldDefaults(level=AccessLevel.PRIVATE)
 @Document(collection="student")
-public class Student 
+public class Student
 {
 	@Id
 	String id;
