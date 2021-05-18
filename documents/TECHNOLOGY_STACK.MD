@@ -4,7 +4,6 @@
 	<ul>
 		<li><a href="#overview">Overview</a></li>
 		<li><a href="#data">Data</a></li>
-		<li><a href="#client---frontend-ui">Client - Frontend/UI</a></li>
 		<li><a href="#server---backend">Server - Backend</a></li>
 		<li><a href="#libraries-and-plugins">Libraries and Plugins</a></li>
 		<li><a href="#others">Others</a></li>
