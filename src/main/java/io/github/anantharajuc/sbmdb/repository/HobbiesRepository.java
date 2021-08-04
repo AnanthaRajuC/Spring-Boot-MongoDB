@@ -12,7 +12,7 @@ import io.github.anantharajuc.sbmdb.domain.model.Hobbies;
  * @author <a href="mailto:arcswdev@gmail.com">Anantha Raju C</a>
  */
 @Repository
-public interface HobbiesRepository extends MongoRepository<Hobbies, String> 
+public interface HobbiesRepository extends MongoRepository<Hobbies, String>
 {
 
 }

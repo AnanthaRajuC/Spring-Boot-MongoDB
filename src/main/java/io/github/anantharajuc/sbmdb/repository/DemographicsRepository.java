@@ -12,7 +12,7 @@ import io.github.anantharajuc.sbmdb.domain.model.Demographics;
  * @author <a href="mailto:arcswdev@gmail.com">Anantha Raju C</a>
  */
 @Repository
-public interface DemographicsRepository extends MongoRepository<Demographics, String> 
+public interface DemographicsRepository extends MongoRepository<Demographics, String>
 {
 
 }

@@ -1,4 +1,4 @@
-package io.github.anantharajuc.sbmdb.api.controller;
+package io.github.anantharajuc.sbmdb.api.controller.student;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;

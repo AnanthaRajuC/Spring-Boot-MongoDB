@@ -2,8 +2,6 @@
 
 You can test out the API's by using a third-party tool called [Postman](https://www.postman.com/), this is a free app that you can download and you can view all the endpoints on the left and the API data on the right.
 
-[![Postman](images/Postman.PNG)](images/Postman.PNG)
-
 In order to download the End Points for the application you can find this file located here:
 
 `documents/Spring Boot MongoDB.postman_collection`

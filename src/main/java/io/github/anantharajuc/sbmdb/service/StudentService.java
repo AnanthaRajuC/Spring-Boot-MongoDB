@@ -2,7 +2,10 @@ package io.github.anantharajuc.sbmdb.service;
 
 import java.util.List;
 
+import io.github.anantharajuc.sbmdb.domain.model.Demographics;
+import io.github.anantharajuc.sbmdb.domain.model.Hobbies;
 import io.github.anantharajuc.sbmdb.domain.model.Student;
+import io.github.anantharajuc.sbmdb.domain.model.Subject;
 
 /**
  * Student Service.
@@ -30,4 +33,10 @@ public interface StudentService
 	Student updateStudent(String id, Student student);
 	
 	void deleteStudentById(String id);
+	
+	Demographics findStudentDemographics(String id);
+	
+	List<Subject> findStudentSubjects(String id);
+	
+	List<Hobbies> findStudentHobbies(String id);
 }

@@ -8,7 +8,10 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
+import io.github.anantharajuc.sbmdb.domain.model.Demographics;
+import io.github.anantharajuc.sbmdb.domain.model.Hobbies;
 import io.github.anantharajuc.sbmdb.domain.model.Student;
+import io.github.anantharajuc.sbmdb.domain.model.Subject;
 import io.github.anantharajuc.sbmdb.infra.exception.ResourceNotFoundException;
 import io.github.anantharajuc.sbmdb.repository.DemographicsRepository;
 import io.github.anantharajuc.sbmdb.repository.HobbiesRepository;
@@ -149,5 +152,35 @@ public class StudentServiceImpl implements StudentService
 		Sort sort = Sort.by(d, properties);
 
 		return studentRepository.findAll(sort);
+	}
+
+	@Override
+	public Demographics findStudentDemographics(String id)  
+	{
+		log.info("-----> findStudentDemographics service");
+		
+		Student student = studentRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(STUDENT, "id", id));
+		
+		return student.getDemographics();
+	}
+
+	@Override
+	public List<Subject> findStudentSubjects(String id) 
+	{
+		log.info("-----> findStudentSubjects service");
+		
+		Student student = studentRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(STUDENT, "id", id));
+		
+		return student.getSubjects();
+	}
+
+	@Override
+	public List<Hobbies> findStudentHobbies(String id) 
+	{
+		log.info("-----> findStudentHobbies service");
+		
+		Student student = studentRepository.findById(id).orElseThrow(() -> new ResourceNotFoundException(STUDENT, "id", id));
+
+		return student.getHobbies();
 	}
 }
