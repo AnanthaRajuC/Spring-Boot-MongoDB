@@ -7,160 +7,298 @@
 	},
 	"item": [
 		{
-			"name": "create Student",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\" : \"jane5\",\r\n    \"email\" : \"example@domain.com\",\r\n    \"department\" : {\r\n        \"departmentName\" : \"computer science\",\r\n        \"location\" : \"Dystopia\"\r\n    },\r\n    \"subjects\" : [{\r\n        \"subjectName\" : \"Java\",\r\n        \"marksObtained\" : 80\r\n    },\r\n    {\r\n        \"subjectName\" : \"Chemistry\",\r\n        \"marksObtained\" : 90\r\n    }]\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+			"name": "Command API's",
+			"item": [
+				{
+					"name": "create Student",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"newstudent11\",\r\n    \"email\": \"example@domain.com\",\r\n    \"department\": {\r\n        \"departmentName\": \"computer science\",\r\n        \"location\": \"Dystopia\"\r\n    },\r\n    \"subjects\": [\r\n        {\r\n            \"subjectName\": \"Java\",\r\n            \"marksObtained\": 80\r\n        },\r\n        {\r\n            \"subjectName\": \"Chemistry\",\r\n            \"marksObtained\": 90\r\n        }\r\n    ],\r\n    \"demographics\": {\r\n        \"country\": \"usa\",\r\n        \"age\": 24\r\n    },\r\n    \"hobbies\": [\r\n        {\r\n            \"hobbyName\": \"music\",\r\n            \"interestLevel\": 4\r\n        },\r\n        {\r\n            \"hobbyName\": \"sports\",\r\n            \"interestLevel\": 3\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student"
+							]
+						},
+						"description": "http://localhost:8080/api/v1/student"
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/api/v1/student",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"student"
-					]
+				{
+					"name": "delete student by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/60a3aff23b49fe1ac31819a9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"60a3aff23b49fe1ac31819a9"
+							]
+						},
+						"description": "http://localhost:8080/api/v1/student/{id}"
+					},
+					"response": []
 				},
-				"description": "http://localhost:8080/api/v1/student"
-			},
-			"response": []
+				{
+					"name": "update student",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"pamo51\",\r\n    \"email\": \"example@domain.com\",\r\n    \"department\": {\r\n        \"departmentName\": \"computer science\",\r\n        \"location\": \"Dystopia\"\r\n    },\r\n    \"subjects\": [\r\n        {\r\n            \"subjectName\": \"Java\",\r\n            \"marksObtained\": 80\r\n        },\r\n        {\r\n            \"subjectName\": \"Chemistry\",\r\n            \"marksObtained\": 90\r\n        }\r\n    ],\r\n    \"demographics\": {\r\n        \"country\": \"usa\",\r\n        \"age\": 24\r\n    },\r\n    \"hobbies\": [\r\n        {\r\n            \"hobbyName\": \"music\",\r\n            \"interestLevel\": 4\r\n        },\r\n        {\r\n            \"hobbyName\": \"sports\",\r\n            \"interestLevel\": 3\r\n        }\r\n    ]\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/60a3ad14cf5c7e5c39a4a391",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"60a3ad14cf5c7e5c39a4a391"
+							]
+						},
+						"description": "http://localhost:8080/api/v1/student"
+					},
+					"response": []
+				}
+			]
 		},
 		{
-			"name": "find Student by Id",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/student/5fc73bf9af03917ef440d699",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"student",
-						"5fc73bf9af03917ef440d699"
-					]
+			"name": "Query API's",
+			"item": [
+				{
+					"name": "find Student by Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/60a3ac78cf5c7e5c39a4a38d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"60a3ac78cf5c7e5c39a4a38d"
+							]
+						},
+						"description": "http://localhost:8080/api/v1/student/{id}"
+					},
+					"response": []
 				},
-				"description": "http://localhost:8080/api/v1/student/{id}"
-			},
-			"response": []
-		},
-		{
-			"name": "find all Students",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/student",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"student"
-					]
+				{
+					"name": "find all Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student"
+							]
+						},
+						"description": "http://localhost:8080/api/v1/student"
+					},
+					"response": []
 				},
-				"description": "http://localhost:8080/api/v1/student"
-			},
-			"response": []
-		},
-		{
-			"name": "delete student by id",
-			"request": {
-				"method": "DELETE",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/student/5fcf1b079b438f5130aa83cb",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"student",
-						"5fcf1b079b438f5130aa83cb"
-					]
+				{
+					"name": "find student by name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/name?name=pamo1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"name"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pamo1"
+								}
+							]
+						},
+						"description": "http://localhost:8080/api/v1/student/name/John"
+					},
+					"response": []
 				},
-				"description": "http://localhost:8080/api/v1/student/{id}"
-			},
-			"response": []
-		},
-		{
-			"name": "update student",
-			"request": {
-				"method": "PUT",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "{\r\n    \"name\": \"xxxxxxxx\",\r\n    \"email\": \"example@domain.com\",\r\n    \"department\": {\r\n        \"departmentName\": \"computer science\",\r\n        \"location\": \"Dystopia\"\r\n    },\r\n    \"subjects\": [\r\n        {\r\n            \"subjectName\": \"Java\",\r\n            \"marksObtained\": 80\r\n        },\r\n        {\r\n            \"subjectName\": \"Chemistry\",\r\n            \"marksObtained\": 90\r\n        }\r\n    ]\r\n}",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+				{
+					"name": "pagination",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/pagination?pageNo=1&pageSize=2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"pagination"
+							],
+							"query": [
+								{
+									"key": "pageNo",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "2"
+								}
+							]
+						},
+						"description": "http://localhost:8080/api/v1/student/pagination?pageNo=1&pageSize=3&sort=DESC&sortBy=name"
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/api/v1/student/5fc73bf9af03917ef440d699",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"student",
-						"5fc73bf9af03917ef440d699"
-					]
+				{
+					"name": "find all students - sorting",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/sorting?direction=ASC&properties=name",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"sorting"
+							],
+							"query": [
+								{
+									"key": "direction",
+									"value": "ASC"
+								},
+								{
+									"key": "properties",
+									"value": "name"
+								}
+							]
+						},
+						"description": "http://localhost:8080/api/v1/student/sorting?direction=ASC&properties=email"
+					},
+					"response": []
 				},
-				"description": "http://localhost:8080/api/v1/student"
-			},
-			"response": []
-		},
-		{
-			"name": "find student by name",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/api/v1/student/name/John",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"api",
-						"v1",
-						"student",
-						"name",
-						"John"
-					]
+				{
+					"name": "find student by name native query",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/name-native-query?name=pa",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"name-native-query"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "pa"
+								}
+							]
+						},
+						"description": "http://localhost:8080/api/v1/student/name-native-query?name=pa"
+					},
+					"response": []
 				},
-				"description": "http://localhost:8080/api/v1/student/name/John"
-			},
-			"response": []
+				{
+					"name": "find student by department name",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/student/department?departmentName=computer science",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"student",
+								"department"
+							],
+							"query": [
+								{
+									"key": "departmentName",
+									"value": "computer science"
+								}
+							]
+						},
+						"description": "http://localhost:8080/api/v1/student/department?departmentName=computer science"
+					},
+					"response": []
+				}
+			]
 		}
-	],
-	"protocolProfileBehavior": {}
+	]
 }
