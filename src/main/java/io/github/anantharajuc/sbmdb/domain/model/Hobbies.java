@@ -1,4 +1,4 @@
-package io.github.anantharajuc.sbmdb.model;
+package io.github.anantharajuc.sbmdb.domain.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;

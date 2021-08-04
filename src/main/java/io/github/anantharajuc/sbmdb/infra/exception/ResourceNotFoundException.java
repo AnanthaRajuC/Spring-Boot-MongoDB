@@ -1,4 +1,4 @@
-package io.github.anantharajuc.sbmdb.exception;
+package io.github.anantharajuc.sbmdb.infra.exception;
 
 /**
  * Resource Not Found Exception

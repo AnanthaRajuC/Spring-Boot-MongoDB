@@ -2,7 +2,7 @@ package io.github.anantharajuc.sbmdb.service;
 
 import java.util.List;
 
-import io.github.anantharajuc.sbmdb.model.Student;
+import io.github.anantharajuc.sbmdb.domain.model.Student;
 
 /**
  * Student Service.

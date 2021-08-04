@@ -1,4 +1,4 @@
-package io.github.anantharajuc.sbmdb.service;
+package io.github.anantharajuc.sbmdb.service.impl;
 
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,11 +7,13 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
-import io.github.anantharajuc.sbmdb.exception.ResourceNotFoundException;
-import io.github.anantharajuc.sbmdb.model.Student;
+
+import io.github.anantharajuc.sbmdb.domain.model.Student;
+import io.github.anantharajuc.sbmdb.infra.exception.ResourceNotFoundException;
 import io.github.anantharajuc.sbmdb.repository.DemographicsRepository;
 import io.github.anantharajuc.sbmdb.repository.HobbiesRepository;
 import io.github.anantharajuc.sbmdb.repository.StudentRepository;
+import io.github.anantharajuc.sbmdb.service.StudentService;
 import lombok.extern.log4j.Log4j2;
 
 /*

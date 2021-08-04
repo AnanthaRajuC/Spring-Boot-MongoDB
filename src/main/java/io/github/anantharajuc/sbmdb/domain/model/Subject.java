@@ -1,4 +1,4 @@
-package io.github.anantharajuc.sbmdb.model;
+package io.github.anantharajuc.sbmdb.domain.model;
 
 import org.springframework.data.mongodb.core.mapping.Field;
 
@@ -10,11 +10,11 @@ import lombok.experimental.FieldDefaults;
 @Getter
 @Setter
 @FieldDefaults(level=AccessLevel.PRIVATE)
-public class Department 
+public class Subject 
 {
-	@Field(name="department_name")
-	String departmentName;
+	@Field(name="subject_name")
+	String subjectName;
 	
-	@Field(name="location")
-	String location;
+	@Field(name="marks_obtained")
+	int marksObtained;
 }

@@ -3,7 +3,7 @@ package io.github.anantharajuc.sbmdb.repository;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 
-import io.github.anantharajuc.sbmdb.model.Demographics;
+import io.github.anantharajuc.sbmdb.domain.model.Demographics;
 
 /**
  * 

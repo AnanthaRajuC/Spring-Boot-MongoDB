@@ -1,4 +1,4 @@
-package io.github.anantharajuc.sbmdb.model;
+package io.github.anantharajuc.sbmdb.domain.model;
 
 import java.util.List;
 

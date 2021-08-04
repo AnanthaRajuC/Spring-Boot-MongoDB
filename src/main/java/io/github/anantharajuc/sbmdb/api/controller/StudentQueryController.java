@@ -1,4 +1,4 @@
-package io.github.anantharajuc.sbmdb.controller;
+package io.github.anantharajuc.sbmdb.api.controller;
 
 import java.util.List;
 
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.github.anantharajuc.sbmdb.api.ResourcePaths;
-import io.github.anantharajuc.sbmdb.model.Student;
-import io.github.anantharajuc.sbmdb.service.StudentServiceImpl;
+import io.github.anantharajuc.sbmdb.domain.model.Student;
+import io.github.anantharajuc.sbmdb.service.impl.StudentServiceImpl;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
