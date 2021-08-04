@@ -1,14 +1,20 @@
 # Spring Boot - MongoDB
 
+[![GitHub issues](https://img.shields.io/github/issues/Spring-Boot-Framework/Spring-Boot-MongoDB)](https://github.com/Spring-Boot-Framework/Spring-Boot-MongoDB/issues)
+[![GitHub forks](https://img.shields.io/github/forks/Spring-Boot-Framework/Spring-Boot-MongoDB)](https://github.com/Spring-Boot-Framework/Spring-Boot-MongoDB/network)
+[![GitHub license](https://img.shields.io/github/license/Spring-Boot-Framework/Spring-Boot-MongoDB)](https://github.com/Spring-Boot-Framework/Spring-Boot-MongoDB/blob/main/LICENSE.md)
+[![GitHub stars](https://img.shields.io/github/stars/Spring-Boot-Framework/Spring-Boot-MongoDB)](https://github.com/Spring-Boot-Framework/Spring-Boot-MongoDB/stargazers)
+
 ## Purpose
 
-Learning the cross-platform document-oriented database program MongoDB with the Java-based framework Spring Boot.
+Learning the cross-platform document-oriented database program **MongoDB** with the Java-based framework **Spring Boot**.
 
 ## Technology stack & other Open-source libraries
 
 ### Data
 
 * 	[MongoDB](https://www.mongodb.com/) - MongoDB is a general purpose, document-based, distributed database.
+*	A MongoDB Client - Example: [Robomongo](https://robomongo.org/)
 
 ### Server - Backend
 
