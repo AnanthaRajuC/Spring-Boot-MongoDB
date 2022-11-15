@@ -50,7 +50,7 @@
 		<java.version>1.8</java.version>
 		<modelmapper.version>2.4.4</modelmapper.version>
 		<springdoc-openapi-ui.version>1.2.32</springdoc-openapi-ui.version>
-		<swagger-annotations.version>1.6.1</swagger-annotations.version>
+		<swagger-annotations.version>1.6.9</swagger-annotations.version>
 		
 		<!--  Sonar properties  -->
 		<sonar.projectKey>AnanthaRajuC_Spring-Boot-MongoDB</sonar.projectKey>
